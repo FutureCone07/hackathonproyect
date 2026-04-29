@@ -5,7 +5,7 @@ dotenv.config();
 
 const apiKey = process.env.GEMINI_API_KEY;
 if (!apiKey) {
-    console.error("🚨 FALTA LA API KEY en el archivo .env");
+    console.error("FALTA LA API KEY en el archivo .env");
     process.exit(1);
 }
 const genAI = new GoogleGenerativeAI(apiKey);
