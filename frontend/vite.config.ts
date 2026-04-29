@@ -5,7 +5,14 @@ export default defineConfig({
     plugins: [react()],
     server: {
         port: 5173,
-        // Forzamos la IP local para evitar errores de seguridad del navegador
-        host: '127.0.0.1'
+        host: '127.0.0.1',
+        proxy: {
+            // Todas las peticiones que empiecen con /api se dirigirán al backend
+            '/api': {
+                target: 'http://localhost:3000',
+                changeOrigin: true,
+                secure: false,
+            }
+        }
     }
 })
