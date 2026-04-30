@@ -17,3 +17,9 @@ Frontend:
 HTML5 semántico
 Vanilla JavaScript / TypeScript (usando la API fetch para comunicarse con Express)
 CSS3 nativo (o Tailwind CSS vía CDN para estilos ultra rápidos)
+
+
+
+credenciales de prueba:
+admin@tecnm.mx
+admin123
